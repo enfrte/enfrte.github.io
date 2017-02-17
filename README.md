@@ -1,3 +1,3 @@
-# enfrte.github.io
+# Welcome to enfrte.github.io
 
-Testing...
+I'm trying out GitPages as a journaling tool. 
