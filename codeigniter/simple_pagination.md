@@ -8,7 +8,9 @@ Pagination is the process of dividing this data into chunks, like pages in a boo
 
 In CodeIgniter,  the [pagination library](https://www.codeigniter.com/user_guide/libraries/pagination.html) takes care of figuring out how many pagination links are required, and inserts the OFFSET clause value as a method argument to the controller method you are calling it from. Here is an example of just one pagination link
 
-```html <a href="/language/read/20" data-ci-pagination-page="2">2</a> ```
+```html 
+<a href="/language/read/20" data-ci-pagination-page="2">2</a> 
+```
 
 ## How to do it
 
