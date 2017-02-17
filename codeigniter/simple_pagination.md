@@ -73,7 +73,7 @@ In the model, you can of course use the query class library to pass LIMIT and OF
 
 ## Changing the view output
 
-Above is the minimum you need to get pagination working, but it's likely you will want to style or customise your output. To do this you can edit the default preferences which are passed to the `initialize()` function. I prefer to do this by creating a `pagination.php` file in the `config` folder. Here is an example using the [W3.CSS](http://www.w3schools.com/w3css/) front-end CSS framework
+Above is the minimum you need to get pagination working, but it's likely you will want to style or customise your output. To do this you can edit the default preferences which are passed to the `initialize()` function. I prefer to do this by creating a `pagination.php` file in the `config` folder. Here is an example styled with the [W3.CSS](http://www.w3schools.com/w3css/) front-end CSS framework
 
 **pagination.php**
 
