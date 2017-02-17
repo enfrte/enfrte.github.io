@@ -1,3 +1,3 @@
 # My life journal
 
-[Codeigniter](codeigniter/)
+[Codeigniter](codeigniter)
