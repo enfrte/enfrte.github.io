@@ -1,2 +1,2 @@
 # CodeIgniter journal
-[Simple pagination](simple_pagination.md)
+* [Simple pagination](simple_pagination.md)
