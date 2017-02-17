@@ -110,6 +110,8 @@ $config['num_tag_close'] = '</li>';
 
 **View**
 
+Finally, you'll need to ouput it somewhere in your view. 
+
 ```php
 <?php if (!empty($pagination)): ?>
   <div class="w3-container">
