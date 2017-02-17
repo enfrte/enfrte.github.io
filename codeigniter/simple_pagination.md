@@ -8,7 +8,7 @@ Pagination is the process of dividing this data into chunks, like pages in a boo
 
 In CodeIgniter,  the [pagination library](https://www.codeigniter.com/user_guide/libraries/pagination.html) takes care of figuring out how many pagination links are required, and inserts the OFFSET clause value as a method argument to the controller method you are calling it from. Here is an example of just one pagination link
 
-     <a href="/language/read/20" data-ci-pagination-page="2">2</a>
+```html <a href="/language/read/20" data-ci-pagination-page="2">2</a> ```
 
 ## How to do it
 
@@ -16,21 +16,23 @@ Here is how I attempted to use pagination.
 
 **Controller**
 
-    public function read($pagination_offset = 0)
-    {
-      $this->load->library('pagination');
-      $pagination_config['base_url'] = base_url('language/read'); // the controller you are calling
-      $pagination_config['per_page'] = 20; // sql query LIMIT number
+```php
+public function read($pagination_offset = 0)
+{
+  $this->load->library('pagination');
+  $pagination_config['base_url'] = base_url('language/read'); // the controller you are calling
+  $pagination_config['per_page'] = 20; // sql query LIMIT number
 
-      $this->data['languages'] = $this->language_model->get_languages($pagination_config['per_page'], $pagination_offset); // your database call with LIMIT and OFFSET arguments
-      $total_query_rows = $this->db->query('SELECT id FROM languages')->num_rows(); // what the database would have yielded without the LIMIT and OFFSET clauses (*see Notes)
+  $this->data['languages'] = $this->language_model->get_languages($pagination_config['per_page'], $pagination_offset); // your database call with LIMIT and OFFSET arguments
+  $total_query_rows = $this->db->query('SELECT id FROM languages')->num_rows(); // what the database would have yielded without the LIMIT and OFFSET clauses (*see Notes)
 
-      $pagination_config['total_rows'] = $total_query_rows;
-      $this->pagination->initialize($pagination_config); // prepares the pagination based on your configurations
+  $pagination_config['total_rows'] = $total_query_rows;
+  $this->pagination->initialize($pagination_config); // prepares the pagination based on your configurations
 
-      $this->data['pagination'] = $this->pagination->create_links(); // outputs the pagination as a string (*see Notes)
-      $this->load->view('language', $data);
-    }
+  $this->data['pagination'] = $this->pagination->create_links(); // outputs the pagination as a string (*see Notes)
+  $this->load->view('language', $data);
+}
+```
 
 **Model**
 
