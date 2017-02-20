@@ -1,1 +1,4 @@
-body { color: red; }
+.container { 
+  max-width: 600px; 
+}
+
