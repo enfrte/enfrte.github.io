@@ -3,6 +3,7 @@
 **Note:** 
  * This does not include a database setup.
  * I've used diylingo as an example project name. 
+ * I assume you've installed heroku cli and composer.
 
 Grab a copy of the latest codeigniter and navigate to the root folder from the terminal
 
