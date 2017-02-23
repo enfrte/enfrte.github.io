@@ -1,4 +1,4 @@
-# Heroku
+# Setting up CodeIgniter to run on Heroku
 
 **Note:** 
  * This does not include a database setup.
