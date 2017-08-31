@@ -1,3 +1,3 @@
-# My life journal
+# Content
 
 [Codeigniter](codeigniter/index.md)
