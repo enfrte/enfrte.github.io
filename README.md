@@ -5,6 +5,7 @@ Hi, I'm a junior web developer. My current stack is PHP, MySQL, Javascript, and 
 ### Experience 
 
 4 months C# ASP.NET MVC prototype project. 
+
 6 months front end Magento work for various clients.  
 
 ### [Start here](index.md)
