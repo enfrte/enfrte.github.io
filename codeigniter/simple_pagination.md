@@ -2,7 +2,7 @@
 
 ## Intro
 
-Sometimes your database can return a lot of data. Like hundreds (or even thousands) of rows that may need to be outputted to the user. In these kinds of situations, it's good to use pagination, which codeigniter has an built-in library for.
+Sometimes your database can return a lot of data. Like hundreds (or even thousands) of rows that may need to be outputted to the user. In these kinds of situations, it's good to use pagination, which codeigniter has a built-in library for.
 
 Pagination is the process of dividing this data into chunks, like pages in a book. On your webpage, this often looks like a series of clickable number links, but can also be formatted to just previous and next links. Behind the scenes though, pagination works with SQL's [LIMIT and OFFSET clauses](http://www.w3schools.com/php/php_mysql_select_limit.asp). These two clauses, in essence, specify a range of results (database rows) to output.
 
