@@ -51,4 +51,4 @@ Hi, I'm a junior web developer. My current stack is PHP, MySQL, Javascript, but 
 ## Written content
 
 * [Codeigniter](codeigniter/index.md)
-* [JS](js/index.md)
+
